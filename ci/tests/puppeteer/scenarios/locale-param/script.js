@@ -16,6 +16,5 @@ const cas = require('../../cas.js');
 
     await cas.goto(page, "https://localhost:8443/cas/login?locale=es&service=https://apereo.github.io");
     await cas.assertInnerText(page, "#content #fm1 button[name=submitBtn]", "INICIAR SESIÓN");
-    
     await browser.close();
 })();
